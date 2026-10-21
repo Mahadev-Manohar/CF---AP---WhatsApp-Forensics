@@ -1,0 +1,114 @@
+# Test run 2026-10-21T11:13Z  (Python 3.12.10, SQLite 3.49.1)
+test_extracted_files_are_read_only (tests.test_acquisition.Acquisition.test_extracted_files_are_read_only) ... ok
+test_image_changed_during_acquisition_is_detected (tests.test_acquisition.Acquisition.test_image_changed_during_acquisition_is_detected) ... ok
+test_image_is_not_modified (tests.test_acquisition.Acquisition.test_image_is_not_modified) ... ok
+test_manifest_mismatch_detected (tests.test_acquisition.Acquisition.test_manifest_mismatch_detected) ... ok
+test_nonempty_destination_refused (tests.test_acquisition.Acquisition.test_nonempty_destination_refused) ... ok
+test_path_traversal_member_refused (tests.test_acquisition.Acquisition.test_path_traversal_member_refused) ... ok
+test_roundtrip_and_analysis_equivalence (tests.test_acquisition.Acquisition.test_roundtrip_and_analysis_equivalence) ... ok
+test_tampered_image_refused (tests.test_acquisition.Acquisition.test_tampered_image_refused) ... ok
+test_all_numbers_are_fictional (tests.test_acquisition.Generator.test_all_numbers_are_fictional) ... ok
+test_generator_is_deterministic (tests.test_acquisition.Generator.test_generator_is_deterministic) ... ok
+test_generator_refuses_overwrite (tests.test_acquisition.Generator.test_generator_refuses_overwrite) ... ok
+test_bad_key_length (tests.test_aes.AesVectors.test_bad_key_length) ... ok
+test_fips197 (tests.test_aes.AesVectors.test_fips197) ... ok
+test_paper_key_is_aes192 (tests.test_aes.AesVectors.test_paper_key_is_aes192) ... ok
+test_roundtrip_and_padding (tests.test_aes.AesVectors.test_roundtrip_and_padding) ... ok
+test_wrong_key_rejected (tests.test_aes.AesVectors.test_wrong_key_rejected) ... ok
+test_non_sqlite_plaintext_rejected (tests.test_aes.BackupDecrypt.test_non_sqlite_plaintext_rejected) ... ok
+test_ambiguous_unblock_not_resolved (tests.test_limits_negative.PaperLimits.test_ambiguous_unblock_not_resolved)
+Sec. 4.1.3: with several blocked users and a cumulative unblock event, status is unknowable. ... ok
+test_blocked_by_others_not_detectable (tests.test_limits_negative.PaperLimits.test_blocked_by_others_not_detectable)
+Sec. 4.1.3: nothing is stored on the blocked side; the output exposes no 'blocked_me' notion. ... ok
+test_corrupt_log_lines_are_tolerated (tests.test_limits_negative.PaperLimits.test_corrupt_log_lines_are_tolerated)
+Garbage before the first record is ignored; a stray indented line is absorbed into the previous record ... ok
+test_deleted_message_content_not_recovered_from_logs (tests.test_limits_negative.PaperLimits.test_deleted_message_content_not_recovered_from_logs) ... ok
+test_deleted_message_missing_from_backups_has_no_content (tests.test_limits_negative.PaperLimits.test_deleted_message_missing_from_backups_has_no_content) ... ok
+test_deletion_time_of_contact_not_reported (tests.test_limits_negative.PaperLimits.test_deletion_time_of_contact_not_reported)
+Sec. 4.1.4: deletion events carry no jid, so no deletion time may be given. ... ok
+test_never_blocked_contact_has_no_status (tests.test_limits_negative.PaperLimits.test_never_blocked_contact_has_no_status) ... ok
+test_purged_log_hides_contact_add (tests.test_limits_negative.PaperLimits.test_purged_log_hides_contact_add)
+Sec. 4.1.2/4.1.4 caveat: inferences need the log file to still exist. ... ok
+test_unblock_event_has_no_jid (tests.test_limits_negative.PaperLimits.test_unblock_event_has_no_jid) ... ok
+test_deleted_message_reconstruction (tests.test_paper_figures.Fig13_14DeletedMessage.test_deleted_message_reconstruction) ... ok
+test_group_events (tests.test_paper_figures.Fig15Group.test_group_events) ... ok
+test_group_id_decoding (tests.test_paper_figures.Fig15Group.test_group_id_decoding) ... ok
+test_added_time_matches_paper (tests.test_paper_figures.Fig1ContactAdd.test_added_time_matches_paper) ... ok
+test_elision_and_continuations (tests.test_paper_figures.Fig1ContactAdd.test_elision_and_continuations) ... ok
+test_photo_timestamps_in_fig1_are_consistent (tests.test_paper_figures.Fig1ContactAdd.test_photo_timestamps_in_fig1_are_consistent) ... ok
+test_block_and_cumulative_unblock (tests.test_paper_figures.Fig2Blocking.test_block_and_cumulative_unblock) ... ok
+test_broadcast_key_id_forms (tests.test_paper_figures.QuotedTimestamps.test_broadcast_key_id_forms) ... ok
+test_fig11_composition (tests.test_paper_figures.QuotedTimestamps.test_fig11_composition) ... ok
+test_fig11_group_times (tests.test_paper_figures.QuotedTimestamps.test_fig11_group_times) ... ok
+test_fig3_chat (tests.test_paper_figures.QuotedTimestamps.test_fig3_chat) ... ok
+test_fig8_message_object (tests.test_paper_figures.QuotedTimestamps.test_fig8_message_object) ... ok
+test_fig8_state_changes (tests.test_paper_figures.QuotedTimestamps.test_fig8_state_changes) ... ok
+test_fig8_states_a_b_c (tests.test_paper_figures.QuotedTimestamps.test_fig8_states_a_b_c) ... ok
+test_group_id_decoding (tests.test_pipeline.F10_Groups.test_group_id_decoding) ... ok
+test_log_events_agree_with_database_timeline (tests.test_pipeline.F10_Groups.test_log_events_agree_with_database_timeline) ... ok
+test_membership_at_time (tests.test_pipeline.F10_Groups.test_membership_at_time) ... ok
+test_message_sent_while_member (tests.test_pipeline.F10_Groups.test_message_sent_while_member) ... ok
+test_timeline (tests.test_pipeline.F10_Groups.test_timeline) ... ok
+test_all_deleted_messages_found_with_details (tests.test_pipeline.F11_DeletedMessagesFromLogs.test_all_deleted_messages_found_with_details) ... ok
+test_deleted_messages_absent_from_live_db (tests.test_pipeline.F11_DeletedMessagesFromLogs.test_deleted_messages_absent_from_live_db) ... ok
+test_backup_is_not_synchronised_with_live_db (tests.test_pipeline.F12_Backups.test_backup_is_not_synchronised_with_live_db) ... ok
+test_backups_decrypt_with_paper_key (tests.test_pipeline.F12_Backups.test_backups_decrypt_with_paper_key) ... ok
+test_log_and_backup_combine_for_full_picture (tests.test_pipeline.F12_Backups.test_log_and_backup_combine_for_full_picture) ... ok
+test_message_deleted_from_live_db_recovered_from_backup (tests.test_pipeline.F12_Backups.test_message_deleted_from_live_db_recovered_from_backup) ... ok
+test_only_backed_up_messages_are_recovered (tests.test_pipeline.F12_Backups.test_only_backed_up_messages_are_recovered) ... ok
+test_matching_sim_is_not_flagged (tests.test_pipeline.F13_Settings.test_matching_sim_is_not_flagged) ... ok
+test_registered_number_and_sim_mismatch (tests.test_pipeline.F13_Settings.test_registered_number_and_sim_mismatch) ... ok
+test_avatar_files_linked_to_contacts (tests.test_pipeline.F1_Contacts.test_avatar_files_linked_to_contacts)
+Table 1 rows 4/5: <jid>.j exists for every WhatsApp contact except the non-user number. ... ok
+test_avatar_timestamps_use_correct_units (tests.test_pipeline.F1_Contacts.test_avatar_timestamps_use_correct_units) ... ok
+test_contact_list (tests.test_pipeline.F1_Contacts.test_contact_list) ... ok
+test_jid_structure (tests.test_pipeline.F1_Contacts.test_jid_structure) ... ok
+test_non_whatsapp_numbers_flagged (tests.test_pipeline.F1_Contacts.test_non_whatsapp_numbers_flagged) ... ok
+test_added_and_avatar_times (tests.test_pipeline.F2_ContactAddTime.test_added_and_avatar_times) ... ok
+test_alice_statuses_and_times (tests.test_pipeline.F3_Blocking.test_alice_statuses_and_times) ... ok
+test_blocked_at_given_time (tests.test_pipeline.F3_Blocking.test_blocked_at_given_time) ... ok
+test_bob_unambiguous_unblock (tests.test_pipeline.F3_Blocking.test_bob_unambiguous_unblock) ... ok
+test_avatar_of_deleted_contacts_remains (tests.test_pipeline.F4_DeletedContacts.test_avatar_of_deleted_contacts_remains) ... ok
+test_deleted_contact_recovered_from_logs (tests.test_pipeline.F4_DeletedContacts.test_deleted_contact_recovered_from_logs) ... ok
+test_deleted_contact_with_purged_log_only_found_via_avatar (tests.test_pipeline.F4_DeletedContacts.test_deleted_contact_with_purged_log_only_found_via_avatar) ... ok
+test_chat_list_reflects_surviving_conversations (tests.test_pipeline.F5_ChatHistory.test_chat_list_reflects_surviving_conversations) ... ok
+test_chronological_order (tests.test_pipeline.F5_ChatHistory.test_chronological_order) ... ok
+test_fig3_style_conversation (tests.test_pipeline.F5_ChatHistory.test_fig3_style_conversation) ... ok
+test_key_id_structure (tests.test_pipeline.F5_ChatHistory.test_key_id_structure) ... ok
+test_sender_recipient_correlation_by_key_id (tests.test_pipeline.F5_ChatHistory.test_sender_recipient_correlation_by_key_id) ... ok
+test_hash_is_base64_sha256 (tests.test_pipeline.F6_Media.test_hash_is_base64_sha256) ... ok
+test_not_downloaded_file_is_not_found (tests.test_pipeline.F6_Media.test_not_downloaded_file_is_not_found) ... ok
+test_recipient_side_matched_by_hash_when_name_missing (tests.test_pipeline.F6_Media.test_recipient_side_matched_by_hash_when_name_missing) ... ok
+test_sender_and_recipient_records_correlate (tests.test_pipeline.F6_Media.test_sender_and_recipient_records_correlate) ... ok
+test_sender_side (tests.test_pipeline.F6_Media.test_sender_side) ... ok
+test_geolocation (tests.test_pipeline.F7_ContactCardAndLocation.test_geolocation) ... ok
+test_vcard (tests.test_pipeline.F7_ContactCardAndLocation.test_vcard) ... ok
+test_three_states_and_timeline (tests.test_pipeline.F8_MessageState.test_three_states_and_timeline) ... ok
+test_recipient_side (tests.test_pipeline.F9_Broadcast.test_recipient_side) ... ok
+test_sender_side (tests.test_pipeline.F9_Broadcast.test_sender_side) ... ok
+
+----------------------------------------------------------------------
+Ran 81 tests in 5.303s
+
+OK
+
+# Mutation check
+killed   unblock ambiguity resolved eagerly
+killed   membership boundary off-by-one
+killed   status 4/5 swapped
+killed   ms timestamp unit slip
+killed   s timestamp unit slip
+killed   wrong media hash algorithm
+killed   wrong AES key
+killed   avatar flag broken
+killed   orphan avatars never found
+killed   deletion time wrong
+killed   receive event regex broken
+killed   broadcast prefix not stripped
+killed   backup diff ignores live db
+killed   contact-add key corrupted
+killed   group creator not a member
+killed   image-modified check removed
+killed   image hash check removed
+
+17/17 mutants killed
